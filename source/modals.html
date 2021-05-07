@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Home </title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <!-- вход в личный кабинет модальное окно-->
+  <div class="login-modal">
+    <div class="login-modal__inner">
+      <button class="modal-close-btn"></button>
+      <h3 class="login-modal__title title">Вход в личный кабинет</h3>
+      <div class="login-modal__center-block">
+        <ul class="login-modal__input-list">
+          <li class="login-modal__input-item">
+            <label class="login-modal__email">
+              <p>Ваш E-mail</p>
+              <input class="login-modal__email-input entry-row__input" type="email">
+            </label>
+          </li>
+          <li class="login-modal__input-item">
+            <label class="login-modal__password">
+              <p>Пароль</p>
+              <input class="login-modal__password-input entry-row__input error" type="password">
+            </label>
+          </li>
+        </ul>
+        <a href="#" class="login-modal__lose-password-link">Забыли пароль?</a>
+        <button class="orange-btn login-modal__login-btn">Войти</button>
+        <button class="login-modal__registration-btn">зарегистрироваться</button>
+      </div>
+      <div class="login-modal__social-login social-login">
+        <p>Войти через социальные сети</p>
+        <ul class="social-login__btns-list">
+          <li class="social-login__btns-item">
+            <button class="social-login__facebook"><svg width="48" height="48">
+                <use href="img/sprite/sprite.svg#facebook"></use>
+              </svg></button>
+          </li>
+          <li class="social-login__btns-item">
+            <button class="social-login__google"><svg width="48" height="48">
+                <use href="img/sprite/sprite.svg#google"></use>
+              </svg></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- вход в личный кабинет модальное окно-->
+  <br><br><br><br><br><br><br>
+  <!-- регистрация модальное окно-->
+  <div class="registration-modal">
+    <div class="registration-modal__inner">
+      <button class="modal-close-btn"></button>
+      <h3 class="registration-modal__title title">Регистрация</h3>
+      <div class="registration-modal__center-block">
+        <ul class="registration-modal__input-list">
+          <li class="registration-modal__input-item">
+            <label class="registration-modal__name">
+              <p>Ваши имя и фамилия</p>
+              <input class="registration-modal__name-input entry-row__input" type="text">
+            </label>
+          </li>
+          <li class="registration-modal__input-item">
+            <label class="registration-modal__email">
+              <p>Ваш E-mail</p>
+              <input class="registration-modal__email-input entry-row__input" type="email">
+            </label>
+          </li>
+          <li class="registration-modal__input-item">
+            <label class="registration-modal__password">
+              <p>Придумайте пароль</p>
+              <input class="registration-modal__password-input entry-row__input" type="password">
+            </label>
+          </li>
+        </ul>
+        <button class="registration-modal__registration-btn orange-btn ">зарегистрироваться</button>
+      </div>
+      <div class="registration-modal__social-login social-login">
+        <p>Войти через социальные сети</p>
+        <ul class="social-login__btns-list">
+          <li class="social-login__btns-item">
+            <button class="social-login__facebook"><svg width="48" height="48">
+                <use href="img/sprite/sprite.svg#facebook"></use>
+              </svg></button>
+          </li>
+          <li class="social-login__btns-item">
+            <button class="social-login__google"><svg width="48" height="48">
+                <use href="img/sprite/sprite.svg#google"></use>
+              </svg></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- регистрация модальное окно-->
+  <br><br><br><br><br><br><br>
+  <!-- восстановление пароля модальное окно-->
+  <div class="password-recovery-modal">
+    <div class="password-recovery-modal__inner">
+      <button class="modal-close-btn"></button>
+      <h3 class="password-recovery-modal__title title">Восстановление пароля</h3>
+      <div class="password-recovery-modal__center-block">
+        <ul class="password-recovery-modal__input-list">
+          <li class="password-recovery-modal__input-item">
+            <label class="password-recovery-modal__email">
+              <p>Ваш E-mail</p>
+              <input class="password-recovery-modal__email-input entry-row__input" type="email">
+            </label>
+          </li>
+        </ul>
+        <button class="password-recovery-modal__next-btn orange-btn ">Продолжить</button>
+        <a class="password-recovery-modal__back-link" href="`#">Назад</a>
+      </div>
+    </div>
+  </div>
+  <!-- восстановление пароля модальное окно-->
+  <br><br><br><br><br><br><br>
+  <!-- восстановление пароля отправлено письмо модальное окно-->
+  <div class="password-recovery-success-modal">
+    <div class="password-recovery-success-modal__inner">
+      <button class="modal-close-btn"></button>
+      <h3 class="password-recovery-success-modal__title title">Восстановление пароля</h3>
+      <div class="password-recovery-success-modal__center-block">
+        <p class="password-recovery-success-modal__text">Инструкции по восстановлению пароля отправлены на указанный
+          адрес электронной почты <span>example@mail.com</span> </p>
+        <button class="password-recovery-success-modal__close-btn orange-btn ">закрыть</button>
+      </div>
+    </div>
+  </div>
+  <!-- восстановление пароля отправлено письмо модальное окно-->
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/JqUi.js"></script>
+  <script src="js/jqTouch.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>
